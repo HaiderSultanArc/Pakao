@@ -24,7 +24,7 @@ class _LoginState extends State<Login> {
               padding: const EdgeInsets.all(10),
               child: TextFormField(
                 validator: (String? value) {
-                  if (value == null || value!.isEmpty) {
+                  if (value == null || value.isEmpty) {
                     return 'Please enter some text';
                   }
                   return null;
@@ -43,7 +43,7 @@ class _LoginState extends State<Login> {
               padding: const EdgeInsets.all(10),
               child: TextFormField(
                 validator: (value) {
-                  if (value == null || value!.isEmpty) {
+                  if (value == null || value.isEmpty) {
                     return 'Please enter some text';
                   }
                   return null;
@@ -74,7 +74,6 @@ class _LoginState extends State<Login> {
                     _formKey.currentState!.save();
                     Navigator.pushNamed(context, '/login');
                   }
-                  ;
                 },
               ),
             ),

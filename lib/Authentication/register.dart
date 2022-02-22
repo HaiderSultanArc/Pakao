@@ -33,7 +33,7 @@ class _RegisterState extends State<Register> {
                           padding: const EdgeInsets.all(10),
                           child: TextFormField(
                             validator: (String? value) {
-                              if (value == null || value!.isEmpty) {
+                              if (value == null || value.isEmpty) {
                                 return 'Please enter some text';
                               }
                               return null;
@@ -64,7 +64,7 @@ class _RegisterState extends State<Register> {
                           child: TextFormField(
                             style: const TextStyle(color: Colors.white),
                             validator: (String? value) {
-                              if (value == null || value!.isEmpty) {
+                              if (value == null || value.isEmpty) {
                                 return 'Please enter some text';
                               }
                               return null;
@@ -94,7 +94,7 @@ class _RegisterState extends State<Register> {
                           child: TextFormField(
                             style: const TextStyle(color: Colors.white),
                             validator: (String? value) {
-                              if (value == null || value!.isEmpty) {
+                              if (value == null || value.isEmpty) {
                                 return 'Please enter some text';
                               }
                               return null;

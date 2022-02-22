@@ -133,10 +133,13 @@ Widget _myListView(BuildContext context) {
                 ),
               ),
               column,
-              Icon(
-                Icons.favorite,
-                color: Colors.orange[900],
-                size: 25,
+              IconButton(
+                icon: Icon(
+                  Icons.favorite,
+                  color: Colors.orange[900],
+                  size: 25,
+                ),
+                onPressed: () {},
               )
             ],
           ),
